@@ -20,3 +20,16 @@ container.fluid {
 	margin-right: auto;
 	width: 30%;
 }
+
+.not-devoured {
+	float: right;
+	margin-left: 20px;
+	padding: 8px;
+	border: 8px;
+}
+.devoured {
+	float: left;
+	margin-right: 20px;
+	padding: 8px;
+	border: 8px;
+}
