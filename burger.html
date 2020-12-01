@@ -32,9 +32,33 @@
 	</head>
 	<body>
 		<container-fluid>
-			<div class="top-box">
-				<h1 class="header" , id="burger-hdr">Eat-Da-Burger!</h1>
-				<img src="./art/burger.jpg" class="burger-pic" />
+			<div class="col-sm-12">
+				<div class="top-box">
+					<h1 class="header" , id="burger-hdr">Eat-Da-Burger!</h1>
+					<img src="./art/burger.jpg" class="burger-pic" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<ol class="not-devoured">
+						<h3>Not Devoured</h3>
+						<li></li>
+					</ol>
+				</div>
+				<div class="input-burger col-sm-4">
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Burger"
+					/>
+					<div class="input-burger-choice"></div>
+				</div>
+				<div class="col-sm-4">
+					<ol class="devoured">
+						<h3>Devoured</h3>
+						<li></li>
+					</ol>
+				</div>
 			</div>
 		</container-fluid>
 	</body>
