@@ -1,6 +1,4 @@
 const mysql = require("mysql");
-const express = require("express");
-const exphbs = require("express-handlebars");
 
 const connection = mysql.createConnection({
 	host: "localhost",
@@ -15,3 +13,4 @@ connection.connect(function (err) {
 	console.log("connected as id " + connection.threadId);
 	connection.end();
 });
+module.exports = { connection };
