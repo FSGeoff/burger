@@ -1,0 +1,35 @@
+body {
+	background-color: rgb(242, 173, 44);
+}
+container.fluid {
+	background-color: rgb(242, 173, 44);
+}
+
+.header {
+	text-align: center;
+	font-size: 90px;
+}
+
+.top-box {
+	margin: auto;
+	position: block;
+}
+.burger-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 32.3%;
+}
+
+.not-devoured {
+	float: right;
+	margin-left: 20px;
+	padding: 8px;
+	border: 8px;
+}
+.devoured {
+	float: left;
+	margin-right: 20px;
+	padding: 8px;
+	border: 8px;
+}
