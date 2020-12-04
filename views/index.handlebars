@@ -5,48 +5,49 @@
   <div class="col-sm-12">
     <div class="top-box">
       <h1 class="header" id="burger-hdr">Eat-Da-Burger!</h1>
-      <img src="https://res.cloudinary.com/fsgeoff/image/upload/v1607053107/burger_pdlz2p.jpg"
-        alt="picture of a hamburger" class="burger-pic" />
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <ol class="not-devoured" id="not-eaten">
-        <h3>Not Devoured</h3>
-        <li>
-          CheeseBurger
-          <button type="button" class="btn btn-light">
-            Devour
-          </button>
-        </li>
-        <li>
-          {{#each burgers}}
-          {{#if devoured}}
-          {{> burger/burger-block devoured=false}}
-          {{/if}}
-          {{/each}}
-        </li>
-      </ol>
 
+      <img class="mx-auto d-block" alt="Picture of Delicious Juicey Hamburger" height="400" width="600"
+        src="https://res.cloudinary.com/fsgeoff/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1607053107/burger_pdlz2p.jpg"
+        </div>
     </div>
-    <div class="input-group mb-3 col-sm-4" id="burger-input">
-      <input type="text" class="form-control" placeholder="Burger Choice" aria-describedby="basic-addon1" />
-      <button type="button" class="btn btn-primary btn-lg btn-block">
-        Submit Burger
-      </button>
-    </div>
-    <div class="col-sm-4">
-      <ol class="devoured" id="eaten">
-        <h3>Devoured</h3>
-        <li></li>
-        <li>
-          {{#each burgers}}
-          {{#if devoured}}
-          {{> burger/burger-block devoured=false}}
-          {{/if}}
-          {{/each}}
-        </li>
-      </ol>
+    <div class="row">
+      <div class="col-sm-4">
+        <ol class="not-devoured" id="not-eaten">
+          <h3>Not Devoured</h3>
+          <li>
+            CheeseBurger
+            <button type="button" class="btn btn-light">
+              Devour
+            </button>
+          </li>
+          <li>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burger/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </li>
+        </ol>
+
+      </div>
+      <div class="input-group mb-3 col-sm-4" id="burger-input">
+        <input type="text" class="form-control" placeholder="Burger Choice" aria-describedby="basic-addon1" />
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          Submit Burger
+        </button>
+      </div>
+      <div class="col-sm-4">
+        <ol class="devoured" id="eaten">
+          <h3>Devoured</h3>
+          <li></li>
+          <li>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burger/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </li>
+        </ol>
+      </div>
     </div>
   </div>
-</div>

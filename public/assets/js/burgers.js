@@ -1,10 +1,12 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
 	$(".change-devoured").on("click", function (event) {
-		var id = $(this).data("id");
-		var newDevoured = $(this).data("newdevour");
+		const id = $(this).data("id");
+		const newDevoured = $(this).data("newdevour");
+		console.log(id);
+		console.log(newDevoured);
 
-		var newDevourState = {
+		const newDevourState = {
 			devoured: newDevoured,
 		};
 
@@ -23,9 +25,9 @@ $(function () {
 		// Make sure to preventDefault on a submit event.
 		event.preventDefault();
 
-		var newBurger = {
+		let newBurger = {
 			name: $("#burg").val().trim(),
-			sleepy: $("[name=devour]:checked").val().trim(),
+			// sleepy: $("[name=devour]:checked").val().trim(),
 		};
 
 		// Send the POST request.
