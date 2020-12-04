@@ -8,6 +8,8 @@ body {
 .header {
 	text-align: center;
 	font-size: 90px;
+	color: rgb(233, 13, 53);
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .top-box {
@@ -20,7 +22,6 @@ body {
 	margin-right: auto;
 	width: 32.3%;
 }
-
 
 #burger-input {
 	text-align: center;
