@@ -1,10 +1,12 @@
 {{!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --}}
 
-<container-fluid>
+
+<div id="main">
   <div class="col-sm-12">
     <div class="top-box">
-      <h1 class="header" , id="burger-hdr">Eat-Da-Burger!</h1>
-      <img src="../public/assets/image/burger.jpg" alt="picture of a hamburger" class="burger-pic" />
+      <h1 class="header" id="burger-hdr">Eat-Da-Burger!</h1>
+      <img src="https://res.cloudinary.com/fsgeoff/image/upload/v1607053107/burger_pdlz2p.jpg"
+        alt="picture of a hamburger" class="burger-pic" />
     </div>
   </div>
   <div class="row">
@@ -17,33 +19,34 @@
             Devour
           </button>
         </li>
+        <li>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burger/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </li>
       </ol>
-      >
+
     </div>
-    <div class="input-group mb-3 col-sm-4">
+    <div class="input-group mb-3 col-sm-4" id="burger-input">
       <input type="text" class="form-control" placeholder="Burger Choice" aria-describedby="basic-addon1" />
       <button type="button" class="btn btn-primary btn-lg btn-block">
         Submit Burger
       </button>
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burger/burger-block devoured=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
     </div>
     <div class="col-sm-4">
-
-      <h3>Devoured</h3>
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burger/burger-block devoured=true}}
-        {{/if}}
-        {{/each}}
-      </ul>
-
+      <ol class="devoured" id="eaten">
+        <h3>Devoured</h3>
+        <li></li>
+        <li>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burger/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </li>
+      </ol>
     </div>
   </div>
-  </cont
+</div>

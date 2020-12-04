@@ -1,7 +1,7 @@
 body {
 	background-color: rgb(242, 173, 44);
 }
-container.fluid {
+#main {
 	background-color: rgb(242, 173, 44);
 }
 
@@ -19,6 +19,10 @@ container.fluid {
 	margin-left: auto;
 	margin-right: auto;
 	width: 32.3%;
+}
+
+#burger-input {
+	text-align: center;
 }
 
 .not-devoured {
