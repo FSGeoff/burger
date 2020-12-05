@@ -26,9 +26,9 @@ $(function () {
 		event.preventDefault();
 
 		let newBurger = {
-			name: $("#burg").val().trim(),
-			// sleepy: $("[name=devour]:checked").val().trim(),
-		};
+			name: $("#burger").val().trim(),
+    };
+    console.log(name);
 
 		// Send the POST request.
 		$.ajax("/api/burgers", {
