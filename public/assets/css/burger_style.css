@@ -13,8 +13,8 @@ body {
 }
 
 .top-box {
-	margin: auto;
-	position: block;
+	width: 100%;
+	text-align: center;
 }
 .burger-pic {
 	display: block;
@@ -23,17 +23,22 @@ body {
 	width: 32.3%;
 }
 
+.create-form input-group mb-4 col-sm-4 {
+	margin:  0 auto;
+	position: block;
+}
+
 #burger-input {
 	text-align: center;
 }
 
-.not-devoured {
+.not-eaten {
 	float: right;
 	margin-left: 20px;
 	padding: 8px;
 	border: 8px;
 }
-.devoured {
+.eaten {
 	float: left;
 	margin-right: 20px;
 	padding: 8px;

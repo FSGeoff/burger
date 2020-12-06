@@ -2,7 +2,7 @@
 $(function () {
 	$(".change-devoured").on("click", function (event) {
 		const id = $(this).data("id");
-		const newDevoured = $(this).data("newdevour");
+		const newDevoured = $(this).data("newDevour");
 		console.log(id);
 		console.log(newDevoured);
 
@@ -14,6 +14,9 @@ $(function () {
 		$.ajax("/api/burgers/" + id, {
 			type: "PUT",
 			data: newDevourState,
+			headers: {
+				"Content-Type": "application/json",
+			},
 		}).then(function () {
 			console.log("changed devour to", newDevour);
 			// Reload the page to get the updated list
@@ -26,9 +29,10 @@ $(function () {
 		event.preventDefault();
 
 		let newBurger = {
-			name: $("#burger").val().trim(),
-    };
-    console.log(name);
+			burger_name: $("#burger").val().trim(),
+			devoured: 0,
+		};
+		console.log(name);
 
 		// Send the POST request.
 		$.ajax("/api/burgers", {
