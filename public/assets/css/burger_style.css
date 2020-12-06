@@ -24,12 +24,13 @@ body {
 }
 
 .create-form input-group mb-4 col-sm-4 {
-	margin:  0 auto;
+	margin: 0 auto;
 	position: block;
 }
 
 #burger-input {
 	text-align: center;
+	margin: 0 auto;
 }
 
 .not-eaten {

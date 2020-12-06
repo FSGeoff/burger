@@ -5,6 +5,7 @@ $(function () {
 		const newDevoured = $(this).data("newDevour");
 		console.log(id);
 		console.log(newDevoured);
+		console.log("Check the button just pressed here:\n ", this)
 
 		const newDevourState = {
 			devoured: newDevoured,
