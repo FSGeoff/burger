@@ -13,16 +13,16 @@
         {{!-- NOT DEVOURED SECTION --}}
         <div class="col-sm" id="not-eaten">
           <ol class="not-eaten">
-            <h3 style="color: rgb(58, 58, 241);" >Not Devoured</h3>
+            <h3 style="color: rgb(58, 58, 241);">Not Devoured</h3>
 
-
+            {{!-- <button class="change-devoured">Devour</button> --}}
 
 
             <li>
               {{#each burgers}}
-              {{#if devoured}}
+              {{#unless devoured}}
               {{> burger/burger-block devoured=false}}
-              {{/if}}
+              {{/unless}}
               {{/each}}
             </li>
           </ol>
@@ -36,7 +36,7 @@
               <label for="burger"></label>
               <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
                 aria-describedby="basic-addon1" />
-              <button type="button" class="btn btn-primary btn-lg btn-block">
+              <button type="submit" class=" create-form btn btn-primary btn-lg btn-block">
                 Submit Burger
               </button>
             </div>

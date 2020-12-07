@@ -5,7 +5,7 @@ $(function () {
 		const newDevoured = $(this).data("newDevour");
 		console.log(id);
 		console.log(newDevoured);
-		console.log("Check the button just pressed here:\n ", this)
+		console.log("Check the button just pressed here:\n ", this);
 
 		const newDevourState = {
 			devoured: newDevoured,
@@ -33,7 +33,7 @@ $(function () {
 			burger_name: $("#burger").val().trim(),
 			devoured: 0,
 		};
-		console.log(name);
+		console.log("NEW BURGER", newBurger);
 
 		// Send the POST request.
 		$.ajax("/api/burgers", {

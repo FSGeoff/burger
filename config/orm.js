@@ -4,7 +4,7 @@ const connection = require("./connection");
 function printQuestionMarks(num) {
 	const arr = [];
 
-	for (const i = 0; i < num; i++) {
+	for (let i = 0; i < num; i++) {
 		arr.push("?");
 	}
 
@@ -45,7 +45,7 @@ const orm = {
 		});
 	},
 	create: function (table, cols, vals, cb) {
-		const queryString = "INSERT INTO " + table;
+		let queryString = "INSERT INTO " + table;
 
 		queryString += " (";
 		queryString += cols.toString();
