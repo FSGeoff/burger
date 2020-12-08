@@ -2,7 +2,7 @@
 $(function () {
 	$(".change-devoured").on("click", function (event) {
 		const id = $(this).data("id");
-		const newDevoured = $(this).data("newDevour");
+		const newDevoured = $(this).data("newdevour");
 		console.log(id);
 		console.log(newDevoured);
 		console.log("Check the button just pressed here:\n ", this);
@@ -15,11 +15,7 @@ $(function () {
 		$.ajax("/api/burgers/" + id, {
 			type: "PUT",
 			data: newDevourState,
-			headers: {
-				"Content-Type": "application/json",
-			},
 		}).then(function () {
-			console.log("changed devour to", newDevour);
 			// Reload the page to get the updated list
 			location.reload();
 		});
