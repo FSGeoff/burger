@@ -7,6 +7,23 @@
       src="https://res.cloudinary.com/fsgeoff/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1607053107/burger_pdlz2p.jpg"
       </div>
 
+    {{!-- Submit Burger Form --}}
+    <div class="container">
+      <row class="row">
+        <form class="create-form" style="width: 600px">
+          <div class="input-group mb-4 col-sm-5" id="burger-input">
+            <label for="burger"></label>
+            <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
+              aria-describedby="basic-addon1" />
+            <button type="submit" class=" create-form btn btn-primary btn-lg btn-block">
+              Submit Burger
+            </button>
+          </div>
+        </form>
+      </row>
+    </div>
+  </div>
+  <div class="col-sm" id="eaten">
 
     <div class="container">
       <div class="row">
@@ -15,7 +32,7 @@
           <ol class="not-eaten">
             <h3 style="color: rgb(58, 58, 241);">Not Devoured</h3>
 
-            {{!-- <button class="change-devoured">Devour</button> --}}
+
 
 
             <li>
@@ -31,7 +48,7 @@
         <div class="col-sm">
           {{!-- Submit Burger Form --}}
 
-          <form class="create-form" style="width: 600px">
+          {{!-- <form class="create-form" style="width: 600px">
             <div class="input-group mb-4 col-sm-5" id="burger-input">
               <label for="burger"></label>
               <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
@@ -40,9 +57,9 @@
                 Submit Burger
               </button>
             </div>
-          </form>
-        </div>
-        <div class="col-sm" id="eaten">
+          </form> --}}
+          {{!-- </div>
+        <div class="col-sm" id="eaten"> --}}
           <ol class="devoured">
             <h3 style="color: rgb(21, 172, 21);">Devoured</h3>
             <li></li>
