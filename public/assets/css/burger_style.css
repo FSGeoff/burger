@@ -33,6 +33,11 @@ body {
 	margin: 0 auto;
 }
 
+form {
+	margin: auto;
+	position: block;
+}
+
 .not-eaten {
 	float: right;
 	margin-left: 20px;

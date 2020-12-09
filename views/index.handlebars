@@ -3,14 +3,14 @@
   <div class="top-box">
     <h1 class="header" id="burger-hdr">Eat-Da-Burger!</h1>
 
-    <img class="mx-auto d-block" alt="Picture of Delicious Juicey Hamburger" height="400" width="600"
+    <img class="mx-auto d-block" alt="Picture of Delicious Juicey Hamburger" height="250" width="450"
       src="https://res.cloudinary.com/fsgeoff/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1607053107/burger_pdlz2p.jpg"
       </div>
 
     {{!-- Submit Burger Form --}}
     <div class="container">
       <row class="row">
-        <form class="create-form" style="width: 600px">
+        <form class="create-form" style="width: 1200px">
           <div class="input-group mb-4 col-sm-5" id="burger-input">
             <label for="burger"></label>
             <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
@@ -25,16 +25,12 @@
   </div>
   <div class="col-sm" id="eaten">
 
+{{!-- NOT DEVOURED SECTION --}}
     <div class="container">
       <div class="row">
-        {{!-- NOT DEVOURED SECTION --}}
         <div class="col-sm" id="not-eaten">
           <ol class="not-eaten">
             <h3 style="color: rgb(58, 58, 241);">Not Devoured</h3>
-
-
-
-
             <li>
               {{#each burgers}}
               {{#unless devoured}}
@@ -45,24 +41,10 @@
           </ol>
         </div>
 
-        <div class="col-sm">
-          {{!-- Submit Burger Form --}}
-
-          {{!-- <form class="create-form" style="width: 600px">
-            <div class="input-group mb-4 col-sm-5" id="burger-input">
-              <label for="burger"></label>
-              <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
-                aria-describedby="basic-addon1" />
-              <button type="submit" class=" create-form btn btn-primary btn-lg btn-block">
-                Submit Burger
-              </button>
-            </div>
-          </form> --}}
-          {{!-- </div>
-        <div class="col-sm" id="eaten"> --}}
+{{!-- DEVOURED SECTION  --}}
+        <div class="col-sm" id="eaten">
           <ol class="devoured">
             <h3 style="color: rgb(21, 172, 21);">Devoured</h3>
-            <li></li>
             <li>
               {{#each burgers}}
               {{#if devoured}}
@@ -74,62 +56,3 @@
         </div>
       </div>
     </div>
-
-    {{!-- <div class="row"> --}}
-
-
-    {{!-- <div class="container">
-        <div class="col-sm-3" id="not-eaten">
-          <ol class="not-eaten">
-            <h3>Not Devoured</h3>
-            <li>
-              CheeseBurger
-              <button type="button" class=" change-devoured btn btn-light">
-                Devour
-              </button>
-            </li>
-            <li>
-              {{#each burgers}}
-              {{#if devoured}}
-              {{> burger/burger-block devoured=false}}
-              {{/if}}
-              {{/each}}
-            </li>
-          </ol>
-        </div> --}}
-
-
-    {{!-- Submit Burger Form
-
-        <form class="create-form" style="width: 600px;">
-          <div class="input-group mb-4 col-sm-5" id="burger-input">
-            <label for="burger"></label>
-            <input type="text" class="form-control" id="burger" placeholder="Burger Choice"
-              aria-describedby="basic-addon1" />
-            <button type="button" class="btn btn-primary btn-lg btn-block">
-              Submit Burger
-            </button>
-          </div>
-        </form> --}}
-
-
-
-
-    {{!-- DEVOURED SECTION --}}
-
-    {{!-- <div class="col-sm-3" id="eaten"> --}}
-    {{!-- <ol class="devoured">
-            <h3>Devoured</h3>
-            <li></li>
-            <li>
-              {{#each burgers}}
-              {{#if devoured}}
-              {{> burger/burger-block devoured=false}}
-              {{/if}}
-              {{/each}}
-            </li>
-          </ol> --}}
-    {{!-- </div>
-    </div>
-  </div>
-</body> --}}
